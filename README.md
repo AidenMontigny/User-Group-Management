@@ -16,59 +16,83 @@ This project demonstrates the process of managing users and groups in a Windows 
 - <b>Windows 10 / Windows Server VM</b>  
 - <b>Hyper-V or compatible Virtualization Platform</b>
 
-<h2>Project Walk-through</h2>
+
+<h2>Project Walk-through:</h2>
+
 <p align="left">
-  <br/><br/> 
-<img src="Screenshot 2025-04-30 155151.png" width="80%" />
+Created a new user in Active Directory by entering the required details including first name, last name, and a logon name following the "First Initial + Last Name" format.<br/><br/>
+  <img src="Screenshot 2025-04-30 155151.png" height="80%" width="80%" alt="Creating New User Step 1"/>
+  <br/>
+<p align="left">
+Assigned a temporary password and selected the option to require the user to change it at next login, ensuring secure credential setup.<br/><br/>
+  <img src="Screenshot 2025-04-30 155200.png" height="80%" width="80%" alt="Password Setup"/>
+  <br/>
+<p align="left">
+Completed the new user creation process by reviewing and confirming the summary before clicking "Finish."<br/><br/>
+  <img src="Screenshot 2025-04-30 155206.png" height="80%" width="80%" alt="Finish User Creation"/>
+  <br/>
+<p align="left">
+Opened the newly created user's properties and entered their job title in the description field for role identification.<br/><br/>
+  <img src="Screenshot 2025-04-30 155212.png" height="80%" width="80%" alt="Job Description Entry"/>
+  <br/>
+<p align="left">
+Initiated group creation to associate users with job-based access controls by assigning them to security groups.<br/><br/>
+  <img src="Screenshot 2025-04-30 155242.png" height="80%" width="80%" alt="Group Creation"/>
+  <br/>
+<p align="left">
+Selected an existing user and navigated to the "Member Of" tab to begin the group assignment process.<br/><br/>
+  <img src="Screenshot 2025-04-30 155348.png" height="80%" width="80%" alt="User Group Assignment Tab"/>
+  <br/>
+<p align="left">
+Clicked the "Add" button to search for and assign the user to the appropriate group (e.g., "Finance Staff").<br/><br/>
+  <img src="Screenshot 2025-04-30 155354.png" height="80%" width="80%" alt="Add to Group"/>
+  <br/>
+<p align="left">
+Confirmed that the group was added successfully and finalized the process by clicking "OK."<br/><br/>
+  <img src="Screenshot 2025-04-30 155400.png" height="80%" width="80%" alt="Group Assignment Confirmation"/>
+  <br/>
+<p align="left">
+Opened the group properties and checked the "Members" tab to verify the user is listed, confirming successful assignment.<br/><br/>
+  <img src="Screenshot 2025-04-30 155410.png" height="80%" width="80%" alt="Verify Group Members"/>
+  <br/>
+<p align="left">
+Repeated the previous steps until 10 users and 10 corresponding groups were created and linked appropriately.<br/><br/>
+  <img src="Screenshot 2025-04-30 155428.png" height="80%" width="80%" alt="Repeat for 10 Users and Groups"/>
+  <br/>
+<p align="left">
+Downloaded the Excel spreadsheet and PowerShell script from the course resources to prepare for bulk user creation.<br/><br/>
+  <img src="Screenshot 2025-04-30 155434.png" height="80%" width="80%" alt="Download Resources"/>
+  <br/>
+<p align="left">
+Renamed the PowerShell script from a .docx to a .ps1 file format, enabling it to be executed in PowerShell.<br/><br/>
+  <img src="Screenshot 2025-04-30 155440.png" height="80%" width="80%" alt="Rename Script File"/>
+  <br/>
+<p align="left">
+Populated the Excel spreadsheet with up to 15 users, including their first and last names, passwords, and specific OU path.<br/><br/>
+  <img src="Screenshot 2025-04-30 155449.png" height="80%" width="80%" alt="Excel User Entry"/>
+  <br/>
+<p align="left">
+Copied both the Excel file and PowerShell script to the shared folder accessible from the virtual machine.<br/><br/>
+  <img src="Screenshot 2025-04-30 155457.png" height="80%" width="80%" alt="Move Files to Shared Folder"/>
+  <br/>
+<p align="left">
+Created a folder named "Temp" on the VM and moved both files into this folder for execution.<br/><br/>
+  <!-- No screenshot for this step -->
+<p align="left">
+Opened PowerShell and ran the following commands to execute the import script:<br/>
+<code>cd C:\Temp</code><br/>
+<code>dir</code><br/>
+<code>.\import (press TAB to auto-complete)</code><br/><br/>
+  <!-- No screenshot for this step -->
+<p align="left">
+Confirmed that the users listed in the Excel sheet were successfully created in Active Directory after running the script.<br/><br/>
+  <img src="Screenshot 2025-04-30 155504.png" height="80%" width="80%" alt="User Import Success"/>
+  <br/>
+<p align="left">
+Verified the newly added users within the Active Directory Users and Computers interface to ensure accuracy.<br/><br/>
+  <img src="Screenshot 2025-04-30 155510.png" height="80%" width="80%" alt="User Verification"/>
+  <br/>
 
-Fill in the user's basic details, including first name, last name, and a user logon name formatted as the first initial followed by the last name.  
-<img src="Screenshot 2025-04-30 155200.png" width="80%" />
-
-Set a temporary password for the user and enable the option requiring them to change the password at next logon to enhance account security.  
-<img src="Screenshot 2025-04-30 155206.png" width="80%" />
-
-Finalize the user creation process by reviewing the summary screen and clicking "Finish."  
-<img src="Screenshot 2025-04-30 155212.png" width="80%" />
-
-After the user is created, open their profile properties and enter their job title in the Description field for easier identification and organization.  
-<img src="Screenshot 2025-04-30 155242.png" width="80%" />
-
-Next, proceed to create a new security group. Provide a meaningful name that reflects the department or team (e.g., "Finance Staff").  
-<img src="Screenshot 2025-04-30 155348.png" width="80%" />
-
-Navigate to the user's account, access the "Member Of" tab, and click "Add" to include them in the newly created group.  
-<img src="Screenshot 2025-04-30 155354.png" width="80%" />
-
-Search for the appropriate group name, confirm the selection, and apply the changes to officially assign the user to the group.  
-<img src="Screenshot 2025-04-30 155400.png" width="80%" />
-
-To verify group membership, open the group’s properties and check the “Members” tab to ensure the user appears on the list.  
-<img src="Screenshot 2025-04-30 155410.png" width="80%" />
-
-Repeat this process until you have created a total of 10 users and 10 corresponding groups, ensuring each user is added to a relevant group.  
-<img src="Screenshot 2025-04-30 155428.png" width="80%" />
-
-Transitioning to bulk user creation, start by downloading the Excel and PowerShell script files provided in your course resources.  
-<img src="Screenshot 2025-04-30 155434.png" width="80%" />
-
-Rename the downloaded PowerShell file from `.docx` to `.ps1` to make it executable in PowerShell.  
-<img src="Screenshot 2025-04-30 155440.png" width="80%" />
-
-Open the Excel file and enter data for up to 15 users, including first names, last names, and passwords. Make sure to update the OU (Organizational Unit) field to reflect your specific environment.  
-<img src="Screenshot 2025-04-30 155449.png" width="80%" />
-
-Once the spreadsheet is complete, move both the Excel file and the PowerShell script into a shared directory accessible from your VM.  
-<img src="Screenshot 2025-04-30 155457.png" width="80%" />
-
-Create a new folder on your VM named **"Temp"**. This directory will be used to store the necessary script and spreadsheet files. After creating the folder, copy and paste both files from your shared folder into the **Temp** directory.
-
-Next, launch **PowerShell**, and navigate to the Temp directory by entering the command `cd C:\Temp`. You can verify that your files are in the directory using the `dir` command. Then run the script by typing `.\import` and pressing the **Tab** key to auto-complete the script name.
-
-PowerShell will execute the script, read the Excel file, and create each user account automatically based on your input data.  
-<img src="Screenshot 2025-04-30 155504.png" width="80%" />
-
-To confirm successful account creation, open Active Directory Users and Computers and verify that the new users appear in the correct Organizational Unit.  
-<img src="Screenshot 2025-04-30 155510.png" width="80%" />
 
 
 <h2>Educational Purpose</h2>
