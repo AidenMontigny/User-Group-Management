@@ -5,7 +5,6 @@ This project demonstrates the process of managing users and groups within a Wind
 
 The project begins with the manual creation of users and groups via the ADUC interface, followed by bulk user creation using an Excel file and a PowerShell script. It emphasizes structured organizational unit (OU) usage and proper permission assignment through group schemas. These concepts reflect real-world practices in corporate IT environments for secure and scalable identity management.
 
-<br/>
 
 <h2>Languages and Utilities Used</h2>
 
@@ -78,7 +77,3 @@ User and group schemas are foundational in any corporate IT infrastructure. They
 
 Microsoft (n.d.). Ownership and user-schema separation in SQL Server - SQL Server. SQL Server | Microsoft Learn.  
 [https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/ownership-and-user-schema-separation](https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/ownership-and-user-schema-separation?view=sql-server-ver16)
-
----
-
-Let me know if you'd like me to format this as a downloadable `.md` file or if you'd like to include screenshots like in your previous project.
