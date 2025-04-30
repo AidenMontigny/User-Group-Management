@@ -32,7 +32,7 @@ Next, create a logon password for the user. Be sure to select the option "User m
   <img src="Screenshot 2025-04-30 155206.png" height="80%" width="80%" alt="Finish User Creation"/>
   <br/>
 <p align="left">
-After completing the password setup, you'll be taken to the final page for creating the user.<br/> Simply click "Finish" to finalize the process, and the new user <br/> will be created. <br/><br/>
+After completing the password setup, you'll be taken to the final page for creating the user.<br/> Simply click "Finish" to finalize the process, and the new user will be created. <br/><br/>
   <img src="Screenshot 2025-04-30 155212.png" height="80%" width="80%" alt="Job Description Entry"/>
   <br/>
 <p align="left">
@@ -84,7 +84,7 @@ Once completed, upload both files to your shared folder and open them on your VM
 Open PowerShell and enter the following commands: 'cd c:\Temp,' 'Dir,' and '.\import' <br/> (press Tab to autocomplete the script path). <br/><br/>
   <!-- No screenshot for this step -->
 <p align="left">
-Once you execute the commands, PowerShell will automatically process them. You can then open the <br/> 'Users' file, where you will see the newly created users listed. <br/><br/>
+Once you execute the commands, PowerShell will automatically process them. You can then open <br/> the 'Users' file, where you will see the newly created users listed. <br/><br/>
   <img src="Screenshot 2025-04-30 155510.png" height="80%" width="80%" alt="User Verification"/>
   <br/>
 
