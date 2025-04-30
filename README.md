@@ -20,27 +20,27 @@ This project demonstrates the process of managing users and groups in a Windows 
 <h2>Project Walk-through:</h2>
 
 <p align="left">
-The first step is to create a new user. Once you've clicked on "New," you'll need to fill out the basic information for the user, including their first name, last name, and user logon name. <br/><br/>
+The first step is to create a new user. Once you've clicked on "New," you'll need to fill <br/> out the basic information for the user, including their first name, <br/> last name, and user logon name. <br/><br/>
   <img src="Screenshot 2025-04-30 155151.png" height="80%" width="80%" alt="Creating New User Step 1"/>
   <br/>
 <p align="left">
- After clicking 'New,' enter the user's basic information, including first name, last name, and a logon name formatted as the first initial followed by the last name. <br/><br/>
+ After clicking 'New,' enter the user's basic information, including first name, last name,<br/> and a logon name formatted as the first initial followed by the last name. <br/><br/>
   <img src="Screenshot 2025-04-30 155200.png" height="80%" width="80%" alt="Password Setup"/>
   <br/>
 <p align="left">
-Next, create a logon password for the user. Be sure to select the option "User must change password at next logon" to allow the user to create their own password upon their first login. <br/><br/>
+Next, create a logon password for the user. Be sure to select the option "User must change <br/>password at next logon" to allow the user to create their own password  <br/>upon their first login. <br/><br/>
   <img src="Screenshot 2025-04-30 155206.png" height="80%" width="80%" alt="Finish User Creation"/>
   <br/>
 <p align="left">
-After completing the password setup, you'll be taken to the final page for creating the user. Simply click "Finish" to finalize the process, and the new user will be created. <br/><br/>
+After completing the password setup, you'll be taken to the final page for creating the user.<br/> Simply click "Finish" to finalize the process, and the new user <br/> will be created. <br/><br/>
   <img src="Screenshot 2025-04-30 155212.png" height="80%" width="80%" alt="Job Description Entry"/>
   <br/>
 <p align="left">
-  Once the user is created, double-click on their name to open their profile. In the window that appears, enter the user’s job title in the "Description" field. <br/><br/>
+  Once the user is created, double-click on their name to open their profile. In the window <br/>that appears, enter the user’s job title in the "Description" field. <br/><br/>
   <img src="Screenshot 2025-04-30 155242.png" height="80%" width="80%" alt="Group Creation"/>
   <br/>
   <p align="left">
-After assigning the user a job title, the next step is to create a corresponding group to add them to. <br/><br/>
+After assigning the user a job title, the next step is to create a corresponding group to add<br/> them to. <br/><br/>
   <img src="Screenshot 2025-04-30 155348.png" height="80%" width="80%" alt="User Group Assignment Tab"/>
   <br/>
 <p align="left">
@@ -61,7 +61,7 @@ After clicking 'OK,' the user will be successfully added to the selected group. 
   <img src="Screenshot 2025-04-30 155428.png" height="80%" width="80%" alt="Repeat for 10 Users and Groups"/>
   <br/>
 <p align="left">
-To confirm the user was added, double-click the group and navigate to the 'Members' tab to view all current group members. <br/><br/>
+To confirm the user was added, double-click the group and navigate to the 'Members' tab to <br/> view all current group members. <br/><br/>
   <img src="Screenshot 2025-04-30 155434.png" height="80%" width="80%" alt="Download Resources"/>
   <br/>
 <p align="left">
@@ -69,11 +69,11 @@ Repeat this process until you have created 10 groups, each with a unique user as
   <img src="Screenshot 2025-04-30 155440.png" height="80%" width="80%" alt="Rename Script File"/>
   <br/>
 <p align="left">
-Download the 'PowerShell Script' and change its file extension from '.Docx' to '.PS1' to enable it to open and run properly on your VM. <br/><br/>
+Download the 'PowerShell Script' and change its file extension from '.Docx' to '.PS1' to <br/> enable it to open and run properly on your VM. <br/><br/>
   <img src="Screenshot 2025-04-30 155449.png" height="80%" width="80%" alt="Excel User Entry"/>
   <br/>
 <p align="left">
-Next, open the 'Excel' file and add up to 15 users. For each user, enter their 'First Name,' 'Last Name,' and a 'Password.' Finally, update the Organizational Unit (OU) to reflect your specific OU. <br/><br/>
+Next, open the 'Excel' file and add up to 15 users. For each user, enter their 'First Name,'<br/>  'Last Name,' and a 'Password.' Finally, update the Organizational <br/> Unit (OU) to reflect your specific OU. <br/><br/>
   <img src="Screenshot 2025-04-30 155457.png" height="80%" width="80%" alt="Move Files to Shared Folder"/>
   <br/>
 <p align="left">
@@ -81,10 +81,10 @@ Once completed, upload both files to your shared folder and open them on your VM
    <img src="Screenshot 2025-04-30 155504.png" height="80%" width="80%" alt="User Import Success"/>
   <br/>
 <p align="left">
-Open PowerShell and enter the following commands: 'cd c:\Temp,' 'Dir,' and '.\import' (press Tab to autocomplete the script path). <br/><br/>
+Open PowerShell and enter the following commands: 'cd c:\Temp,' 'Dir,' and '.\import' <br/> (press Tab to autocomplete the script path). <br/><br/>
   <!-- No screenshot for this step -->
 <p align="left">
-Once you execute the commands, PowerShell will automatically process them. You can then open the 'Users' file, where you will see the newly created users listed. <br/><br/>
+Once you execute the commands, PowerShell will automatically process them. You can then open the <br/> 'Users' file, where you will see the newly created users listed. <br/><br/>
   <img src="Screenshot 2025-04-30 155510.png" height="80%" width="80%" alt="User Verification"/>
   <br/>
 
@@ -93,7 +93,3 @@ This project provides hands-on experience in managing directory services using A
 
 <h2>Real-World Relevance</h2>
 Effective user and group management is critical for maintaining organizational security and efficiency. By leveraging Active Directory and PowerShell, IT professionals can implement structured, role-based access control and streamline onboarding processes at scale.
-
-<h2>Reference</h2>
-Microsoft (n.d.). Ownership and user-schema separation in SQL Server - SQL Server. SQL Server | Microsoft Learn.  
-[https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/ownership-and-user-schema-separation](https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/ownership-and-user-schema-separation?view=sql-server-ver16)
