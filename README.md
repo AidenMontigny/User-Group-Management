@@ -17,8 +17,8 @@ This project demonstrates the process of managing users and groups in a Windows 
 - <b>Hyper-V or compatible Virtualization Platform</b>
 
 <h2>Project Walk-through</h2>
-
-Begin by launching Active Directory Users and Computers and selecting the option to create a new user.  
+<p align="left">
+  <br/><br/> 
 <img src="Screenshot 2025-04-30 155151.png" width="80%" />
 
 Fill in the user's basic details, including first name, last name, and a user logon name formatted as the first initial followed by the last name.  
