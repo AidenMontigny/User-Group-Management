@@ -20,7 +20,7 @@ This project demonstrates the process of managing users and groups in a Windows 
 <h2>Project Walk-through:</h2>
 
 <p align="left">
-The first step is to create a new user. Once you've clicked on "New," you'll need to fill <br/> out the basic information for the user, including their first name, <br/> last name, and user logon name. <br/><br/>
+The first step is to create a new user. Once you've clicked on "New," you'll need to fill <br/> out the basic information for the user, including their first name, last name, <br/> and user logon name. <br/><br/>
   <img src="Screenshot 2025-04-30 155151.png" height="80%" width="80%" alt="Creating New User Step 1"/>
   <br/>
 <p align="left">
@@ -28,7 +28,7 @@ The first step is to create a new user. Once you've clicked on "New," you'll nee
   <img src="Screenshot 2025-04-30 155200.png" height="80%" width="80%" alt="Password Setup"/>
   <br/>
 <p align="left">
-Next, create a logon password for the user. Be sure to select the option "User must change <br/>password at next logon" to allow the user to create their own password  <br/>upon their first login. <br/><br/>
+Next, create a logon password for the user. Be sure to select the option "User must change <br/>password at next logon" to allow the user to create their own password upon their <br/> first login. <br/><br/>
   <img src="Screenshot 2025-04-30 155206.png" height="80%" width="80%" alt="Finish User Creation"/>
   <br/>
 <p align="left">
@@ -73,7 +73,7 @@ Download the 'PowerShell Script' and change its file extension from '.Docx' to '
   <img src="Screenshot 2025-04-30 155449.png" height="80%" width="80%" alt="Excel User Entry"/>
   <br/>
 <p align="left">
-Next, open the 'Excel' file and add up to 15 users. For each user, enter their 'First Name,'<br/>  'Last Name,' and a 'Password.' Finally, update the Organizational <br/> Unit (OU) to reflect your specific OU. <br/><br/>
+Next, open the 'Excel' file and add up to 15 users. For each user, enter their 'First Name,'<br/>  'Last Name,' and a 'Password.' Finally, update the Organizational Unit (OU) to  <br/>reflect your specific OU. <br/><br/>
   <img src="Screenshot 2025-04-30 155457.png" height="80%" width="80%" alt="Move Files to Shared Folder"/>
   <br/>
 <p align="left">
