@@ -17,48 +17,78 @@ The project begins with the manual creation of users and groups via the ADUC int
 - <b>Windows 10 / Windows Server VM (Virtual Machine)</b>  
 - <b>Hyper-V or other Virtualization Software</b>
 
-<h2>Project Walk-through:</h2>
+<h2>Project Walk-through (Step-by-Step):</h2>
 
-<p align="left">
-<b>Step 1:</b> Create a New User in Active Directory.<br/>
-- Fill out required fields: First Name, Last Name, and User Logon Name (First Initial + Last Name).<br/>
-- Assign a temporary password and enable "User must change password at next logon".<br/>
-- Click "Finish" to complete the user creation.<br/><br/>
+<p align="left"><b>Step 1:</b> Open Active Directory Users and Computers to begin user creation.<br/><br/>
+  <img src="screenshot1.png" width="80%" alt="Step 1 Screenshot"/>
 </p>
 
-<p align="left">
-<b>Step 2:</b> Edit User Properties.<br/>
-- Open the user’s properties.<br/>
-- In the “Description” field, input their job title (e.g., "Finance Specialist").<br/><br/>
+<p align="left"><b>Step 2:</b> Click “New User” and begin entering the user’s first name, last name, and username.<br/><br/>
+  <img src="screenshot2.png" width="80%" alt="Step 2 Screenshot"/>
 </p>
 
-<p align="left">
-<b>Step 3:</b> Create and Assign a Group.<br/>
-- Navigate to the Groups section and create a new group (e.g., “Finance Staff”).<br/>
-- Go to the user’s “Member Of” tab and add them to the appropriate group.<br/>
-- Verify group membership via the group’s “Members” tab.<br/><br/>
+<p align="left"><b>Step 3:</b> Create and confirm a temporary password, and require the user to change it at next logon.<br/><br/>
+  <img src="screenshot3.png" width="80%" alt="Step 3 Screenshot"/>
 </p>
 
-<p align="left">
-<b>Step 4:</b> Repeat the process for 10 unique users and 10 groups.<br/><br/>
+<p align="left"><b>Step 4:</b> Complete user creation by clicking “Finish”.<br/><br/>
+  <img src="screenshot4.png" width="80%" alt="Step 4 Screenshot"/>
 </p>
 
-<h3>Automated User Creation with PowerShell:</h3>
-
-<p align="left">
-<b>Step 5:</b> Bulk Import Users via PowerShell Script.<br/>
-- Convert the provided PowerShell script from <code>.docx</code> to <code>.ps1</code>.<br/>
-- Update the accompanying Excel sheet with up to 15 users, specifying First Name, Last Name, Password, and OU.<br/>
-- Copy both files into a shared folder, then into a "Temp" folder on the VM.<br/><br/>
+<p align="left"><b>Step 5:</b> Open the user's properties and add their job title to the Description field.<br/><br/>
+  <img src="screenshot5.png" width="80%" alt="Step 5 Screenshot"/>
 </p>
 
-<p align="left">
-<b>Step 6:</b> Run the PowerShell Script.<br/>
-- Open PowerShell and run the following commands:<br/>
-  <code>cd C:\Temp</code><br/>
-  <code>dir</code><br/>
-  <code>.\import-users.ps1</code> (use Tab to autocomplete)<br/>
-- Users will be created in Active Directory according to the Excel data.<br/><br/>
+<p align="left"><b>Step 6:</b> Begin creating a new group that the user will belong to.<br/><br/>
+  <img src="screenshot6.png" width="80%" alt="Step 6 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 7:</b> Assign a name to the group (e.g., Finance Staff).<br/><br/>
+  <img src="screenshot7.png" width="80%" alt="Step 7 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 8:</b> Navigate to the user’s “Member Of” tab.<br/><br/>
+  <img src="screenshot8.png" width="80%" alt="Step 8 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 9:</b> Add the user to the group you created.<br/><br/>
+  <img src="screenshot9.png" width="80%" alt="Step 9 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 10:</b> Confirm group membership through the group’s “Members” tab.<br/><br/>
+  <img src="screenshot10.png" width="80%" alt="Step 10 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 11:</b> Repeat the process to create 10 users and 10 groups.<br/><br/>
+  <img src="screenshot11.png" width="80%" alt="Step 11 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 12:</b> Download the Excel and PowerShell scripts from the resources provided.<br/><br/>
+  <img src="screenshot12.png" width="80%" alt="Step 12 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 13:</b> Modify the PowerShell file extension from `.docx` to `.ps1`.<br/><br/>
+  <img src="screenshot13.png" width="80%" alt="Step 13 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 14:</b> Fill out the Excel spreadsheet with at least 15 users (first name, last name, password, OU).<br/><br/>
+  <img src="screenshot14.png" width="80%" alt="Step 14 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 15:</b> Move both the Excel file and PowerShell script into a shared folder, then into a Temp folder on your VM.<br/><br/>
+  <img src="screenshot15.png" width="80%" alt="Step 15 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 16:</b> Open PowerShell, navigate to the Temp directory, and run the import script.<br/><br/>
+  <img src="screenshot16.png" width="80%" alt="Step 16 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 17:</b> Confirm that the script has successfully created the users in Active Directory.<br/><br/>
+  <img src="screenshot17.png" width="80%" alt="Step 17 Screenshot"/>
+</p>
+
+<p align="left"><b>Step 18:</b> Review the user list in ADUC to verify the bulk import was successful.<br/><br/>
+  <img src="screenshot18.png" width="80%" alt="Step 18 Screenshot"/>
 </p>
 
 <h2>Educational Purpose</h2>
