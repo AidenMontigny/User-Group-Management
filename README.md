@@ -21,7 +21,7 @@ This project demonstrates the process of managing users and groups in a Windows 
 Begin by launching Active Directory Users and Computers and selecting the option to create a new user.  
 <img src="Screenshot 2025-04-30 155151.png" width="80%" />
 
-Fill in the user's basic details, including first name, last name, and a user logon name formatted as the first initial followed by the last name (e.g., jdoe).  
+Fill in the user's basic details, including first name, last name, and a user logon name formatted as the first initial followed by the last name.  
 <img src="Screenshot 2025-04-30 155200.png" width="80%" />
 
 Set a temporary password for the user and enable the option requiring them to change the password at next logon to enhance account security.  
